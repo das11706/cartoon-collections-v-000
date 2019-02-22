@@ -26,8 +26,8 @@ def find_the_cheese(array)# code an argument here
       array.include?("cheddar" || "gouda" || "camembert")
       #array.detect{|cheese| cheese.is_a?("cheddar")}
       #cheese.include?("cheddar" || "gouda" || "camembert")
-      array
-
+      array.detect{|cheese| cheese}
+    end
 end
 #[1,2,3,4].detect{|i| i.even?} #=> 2
 #[1,2,3,4].detect{|i| i.is_a?(String)} #=> nil
