@@ -23,10 +23,11 @@ def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   #array.include?("cheddar")
-    array.include?("camembert")
+    if array.include?("cheddar")
+      array[0]
       #cheese.include?("cheddar" || "gouda" || "camembert")
       #cheese
-  #end
+  end
 end
 #[1,2,3,4].detect{|i| i.even?} #=> 2
 #[1,2,3,4].detect{|i| i.is_a?(String)} #=> nil
