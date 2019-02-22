@@ -25,7 +25,7 @@ def find_the_cheese(array)# code an argument here
   #array.include?("cheddar")
     array.detect do |cheese|
       cheese.include?("cheddar")
-
+      return cheese
   end
 end
 #[1,2,3,4].detect{|i| i.even?} #=> 2
