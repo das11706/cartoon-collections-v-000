@@ -22,12 +22,7 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-      array.include?("cheddar" || "gouda" || "camembert")
-      array.detect do |cheese|
-      if cheese == "cheddar" || "gouda" || "camembert"
-        cheese
-      end
-    end
+  array.detect{|i| i.include?("cheddar" || "gouda" || "camembert")}
 end
 #array.detect{|i| i.include?("cheddar" || "gouda" || "camembert")} #=> 2
 #[1,2,3,4].detect{|i| i.is_a?(String)} #=> nil
@@ -35,3 +30,10 @@ end
 #the_numbers = [4,8,15,16,23,42]
 #the_numbers.include?(42)   #=> true
 #the_numbers.include?(6)
+
+#array.include?("cheddar" || "gouda" || "camembert")
+#array.detect do |cheese|
+#if cheese == "cheddar" || "gouda" || "camembert"
+  #cheese
+#end
+#end
